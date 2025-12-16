@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anti-Gravity Gallery (Vanilla)</title>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+          "@mediapipe/tasks-vision": "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.9/+esm"
+        }
+      }
+    </script>
+  <script type="module" crossorigin src="/assets/index-CoCnUg6a.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CvP0srSd.css">
+</head>
+
+<body>
+    <div id="app"></div>
+    <div id="ui">
+        <p>RIGHT HAND SWIPE: Scroll X/Y</p>
+        <p>TWO HANDS DISTANCE: Zoom</p>
+        <p>TWO HANDS FIST: Transform Shape</p>
+        <p>INDEX FINGER: Cursor</p>
+        <p>INDEX + THUMB: Select</p>
+        <hr style="border-color: rgba(255,255,255,0.2); margin: 10px 0;">
+        <button id="add-photo-btn">+
+            Add Photo</button>
+        <input type="file" id="photo-input" accept="image/*" style="display: none;">
+    </div>
+    <div id="notes-ui" style="display: none;">
+        <h3>Photo Note</h3>
+        <textarea id="note-input" placeholder="Enter a note..."></textarea>
+        <button id="save-note-btn">Save Note</button>
+    </div>
+</body>
+
+</html>
